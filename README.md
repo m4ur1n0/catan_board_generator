@@ -30,7 +30,7 @@ I built the algorithm for number dispersion and tile placement in Python and the
 4. Run your application as needed:
 
     ```bash
-    ./start_servers.sh
+    ./start_server.sh
     ```
     
 5. Kill the servers when you're through:
