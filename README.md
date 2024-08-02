@@ -10,8 +10,8 @@ I built the algorithm for number dispersion and tile placement in Python and the
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
+    git clone https://github.com/m4ur1n0/catan_board_generator.git
+    cd catan_board_generator
     ```
 
 2. Create and activate a virtual environment:
@@ -34,6 +34,7 @@ I built the algorithm for number dispersion and tile placement in Python and the
     ```
     
 5. Kill the servers when you're through:
+   **NOTE** this will kill any npm dev servers or processes running python scripts named 'server.py'.
 
     ```bash
     ./kill_servers.sh
