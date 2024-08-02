@@ -34,6 +34,7 @@ I built the algorithm for number dispersion and tile placement in Python and the
     ```
     
 5. Kill the servers when you're through:
+
    **NOTE** this will kill any npm dev servers or processes running python scripts named 'server.py'.
 
     ```bash
