@@ -1,0 +1,338 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #c0c0c0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 319px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  /* align-self: center;
+  justify-content: center; */
+}
+.window {
+  width : 100%;
+  display : flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+
+
+.board-container {
+  /* border : 1px solid black; */
+  position : relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* right: 15vw; */
+  margin-right : 20%;
+
+}
+
+.row-1 {
+  position : relative;
+  display: flex;
+  flex-direction: row;
+
+  margin : -18px;
+}
+
+.row-2 {
+  position : relative;
+  display: flex;
+  flex-direction: row;
+  margin : -18px;
+
+}
+
+.row-3 {
+  position : relative;
+  display: flex;
+  flex-direction: row;
+  margin : -18px;
+
+}
+
+.row-4 {
+  position : relative;
+  display: flex;
+  flex-direction: row;
+  margin : -18px;
+
+}
+
+.row-5 {
+  position : relative;
+  display: flex;
+  flex-direction: row;
+  margin : -18px;
+
+}
+
+.tile-stone {
+  position: relative;
+  width: 10vw; /* Desired width */
+  height: 11vw; /* Set height equal to width for proper proportions */
+
+  clip-path: polygon(
+    50% 0%,   /* Top vertex */
+    100% 25%, /* Top right vertex */
+    100% 75%, /* Bottom right vertex */
+    50% 100%, /* Bottom vertex */
+    0% 75%,   /* Bottom left vertex */
+    0% 25%    /* Top left vertex */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white; /* Text color */
+  font-weight: bold; /* Optional */
+  margin-left : 2px;
+  margin-right : 2px;
+
+}
+
+.tile-clay {
+  position: relative;
+  width: 10vw; /* Desired width */
+  height: 11vw; /* Set height equal to width for proper proportions */
+
+  clip-path: polygon(
+    50% 0%,   /* Top vertex */
+    100% 25%, /* Top right vertex */
+    100% 75%, /* Bottom right vertex */
+    50% 100%, /* Bottom vertex */
+    0% 75%,   /* Bottom left vertex */
+    0% 25%    /* Top left vertex */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color */
+  font-weight: bold; /* Optional */
+  margin-left : 2px;
+  margin-right : 2px;
+
+}
+
+.tile-hay {
+  position: relative;
+  width: 10vw; /* Desired width */
+  height: 11vw; /* Set height equal to width for proper proportions */
+  
+  clip-path: polygon(
+    50% 0%,   /* Top vertex */
+    100% 25%, /* Top right vertex */
+    100% 75%, /* Bottom right vertex */
+    50% 100%, /* Bottom vertex */
+    0% 75%,   /* Bottom left vertex */
+    0% 25%    /* Top left vertex */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white; /* Text color */
+  font-weight: bold; /* Optional */
+  margin-left : 2px;
+  margin-right : 2px;
+
+}
+
+.tile-wood {
+  position: relative;
+  width: 10vw; /* Desired width */
+  height: 11vw; /* Set height equal to width for proper proportions */
+  
+  clip-path: polygon(
+    50% 0%,   /* Top vertex */
+    100% 25%, /* Top right vertex */
+    100% 75%, /* Bottom right vertex */
+    50% 100%, /* Bottom vertex */
+    0% 75%,   /* Bottom left vertex */
+    0% 25%    /* Top left vertex */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white; /* Text color */
+  font-weight: bold; /* Optional */
+
+  margin-left : 2px;
+  margin-right : 2px;
+}
+
+.tile-sheep {
+  position: relative;
+  width: 10vw; /* Desired width */
+  height: 11vw; /* Set height equal to width for proper proportions */
+  
+  clip-path: polygon(
+    50% 0%,   /* Top vertex */
+    100% 25%, /* Top right vertex */
+    100% 75%, /* Bottom right vertex */
+    50% 100%, /* Bottom vertex */
+    0% 75%,   /* Bottom left vertex */
+    0% 25%    /* Top left vertex */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white; /* Text color */
+  font-weight: bold; /* Optional */
+
+  margin-left : 2px;
+  margin-right : 2px;
+}
+
+.tile-desert {
+  position: relative;
+  width: 10vw; /* Desired width */
+  height: 11vw; /* Set height equal to width for proper proportions */
+  
+  clip-path: polygon(
+    50% 0%,   /* Top vertex */
+    100% 25%, /* Top right vertex */
+    100% 75%, /* Bottom right vertex */
+    50% 100%, /* Bottom vertex */
+    0% 75%,   /* Bottom left vertex */
+    0% 25%    /* Top left vertex */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white; /* Text color */
+  font-weight: bold; /* Optional */
+
+  margin-left : 2px;
+  margin-right : 2px;
+}
+
+.tile-stone {
+  background-color: gray;
+}
+
+.tile-clay {
+  background-color: rgba(142, 40, 40, 0.916);
+}
+
+.tile-hay {
+  background-color: rgb(208, 195, 52);
+}
+
+.tile-wood {
+  background-color: rgb(22, 72, 38);
+}
+
+.tile-sheep {
+  background-color: rgb(74, 225, 92);
+}
+
+.tile-desert {
+  background-color: rgb(209, 224, 160);
+}
+
+/* .value {
+  display : flex;
+  flex-direction: column;
+} */
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin : 0;
+  padding : 0;
+}
+
+.pips {
+  position : absolute;
+  margin : 0;
+  padding : 0;
+
+  bottom : 1.7vw;
+
+  justify-self: center;
+
+  /* font-weight:1200; */
+  font-size:xx-large;
+
+}
+
+.red-number {
+  outline : 2px solid rgb(107, 91, 70);
+  width : 4.2vw;
+  height : 4.2vw;
+  border-radius: 50%;
+  color : red;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: rgb(252, 202, 75); /* Optional: background color */
+}
+
+
+
+.button {
+  position : relative;
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #dedede;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  color : #f69393;
+
+  width : 20%;
+  height : 15%;
+
+  min-width: fit-content;
+
+  margin-left : 10%;
+}
+
+.button:hover {
+  background-color: #f69393;
+  color : #dedede;
+  
+}
+
