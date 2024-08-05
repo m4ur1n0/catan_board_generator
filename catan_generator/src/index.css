@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -26,7 +27,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 319px;
+  min-width: 100vw;
   min-height: 100vh;
 }
 
@@ -36,15 +37,58 @@ h1 {
   /* align-self: center;
   justify-content: center; */
 }
+
+.background-graphics {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100vw;
+  height : 110vh;
+  /* background-color: #275bb5; */
+  background-image: url('../src/assets/water.png');
+  background-size:cover;
+
+  clip-path: polygon(
+    0% 0%,
+    45% 0%,
+    56% 30%,
+    56% 70%,
+    45% 100%,
+    0% 100%,
+    0% 0%
+  );
+}
+
 .window {
   width : 100%;
+
   display : flex;
   flex-direction: row;
   align-items: center;
   justify-content: right;
+  
 }
 
+.title {
+  /* border: 1px solid black; */
+  position : absolute;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #dedede; */
+  background-image: url('../src/assets/CatanBoardGeneratorLogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  width : 30vw;
+  height : 30vw;
 
+
+  left : 60%;
+  top : 5%;
+
+  margin : 0;
+  z-index: -999;
+}
 
 .board-container {
   /* border : 1px solid black; */
@@ -57,6 +101,11 @@ h1 {
   /* right: 15vw; */
   margin-right : 20%;
 
+  padding : 5%;
+
+  width : 100%;
+  height : 100%;
+
 }
 
 .row-1 {
@@ -64,14 +113,14 @@ h1 {
   display: flex;
   flex-direction: row;
 
-  margin : -18px;
+  margin : -19px;
 }
 
 .row-2 {
   position : relative;
   display: flex;
   flex-direction: row;
-  margin : -18px;
+  margin : -19px;
 
 }
 
@@ -79,7 +128,7 @@ h1 {
   position : relative;
   display: flex;
   flex-direction: row;
-  margin : -18px;
+  margin : -19px;
 
 }
 
@@ -87,7 +136,7 @@ h1 {
   position : relative;
   display: flex;
   flex-direction: row;
-  margin : -18px;
+  margin : -19px;
 
 }
 
@@ -95,9 +144,10 @@ h1 {
   position : relative;
   display: flex;
   flex-direction: row;
-  margin : -18px;
+  margin : -19px;
 
 }
+
 
 .tile-stone {
   position: relative;
@@ -118,8 +168,8 @@ h1 {
 
   color: white; /* Text color */
   font-weight: bold; /* Optional */
-  margin-left : 2px;
-  margin-right : 2px;
+  margin-left : -3px;
+  margin-right : -3px;
 
 }
 
@@ -141,8 +191,8 @@ h1 {
   align-items: center;
   color: white; /* Text color */
   font-weight: bold; /* Optional */
-  margin-left : 2px;
-  margin-right : 2px;
+  margin-left : -3px;
+  margin-right : -3px;
 
 }
 
@@ -165,8 +215,8 @@ h1 {
 
   color: white; /* Text color */
   font-weight: bold; /* Optional */
-  margin-left : 2px;
-  margin-right : 2px;
+  margin-left : -3px;
+  margin-right : -3px;
 
 }
 
@@ -190,8 +240,8 @@ h1 {
   color: white; /* Text color */
   font-weight: bold; /* Optional */
 
-  margin-left : 2px;
-  margin-right : 2px;
+  margin-left : -3px;
+  margin-right : -3px;
 }
 
 .tile-sheep {
@@ -214,8 +264,8 @@ h1 {
   color: white; /* Text color */
   font-weight: bold; /* Optional */
 
-  margin-left : 2px;
-  margin-right : 2px;
+  margin-left : -3px;
+  margin-right : -3px;
 }
 
 .tile-desert {
@@ -238,32 +288,70 @@ h1 {
   color: white; /* Text color */
   font-weight: bold; /* Optional */
 
-  margin-left : 2px;
-  margin-right : 2px;
+  margin-left : -3px;
+  margin-right : -3px;
 }
 
 .tile-stone {
-  background-color: gray;
+  /* background-color: gray; */
+  display: flex;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/stone.png');
+  background-position-y: -1px;
+  background-position-x: 4px;
 }
 
 .tile-clay {
-  background-color: rgba(142, 40, 40, 0.916);
+  /* background-color: rgba(142, 40, 40, 0.916); */
+  display: flex;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/clay.png');
+  background-position-y: -1px;
+  background-position-x: 4px;
 }
 
 .tile-hay {
-  background-color: rgb(208, 195, 52);
+  /* background-color: rgb(208, 195, 52); */
+  display: flex;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/hay.png');
+  background-position-y: -1px;
+  background-position-x: 4px;
 }
 
 .tile-wood {
-  background-color: rgb(22, 72, 38);
+  /* background-color: rgb(22, 72, 38); */
+  display: flex;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/wood.png');
+  background-position-y: -1px;
+  background-position-x: 4px;
 }
 
 .tile-sheep {
-  background-color: rgb(74, 225, 92);
+  /* background-color: rgb(74, 225, 92); */
+  display: flex;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/sheep.png');
+  background-position-y: -1px;
+  background-position-x: 4px;
+  
 }
 
 .tile-desert {
-  background-color: rgb(209, 224, 160);
+  /* background-color: rgb(209, 224, 160); */
+  display: flex;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-image: url('../src/assets/desert.png');
+  background-position-y: -1px;
+  background-position-x: 4px;
+
 }
 
 /* .value {
@@ -280,6 +368,25 @@ h1 {
   padding : 0;
 }
 
+.value {
+
+  outline : 2px solid rgb(107, 91, 70);
+  width : 4vw;
+  height : 4vw;
+  border-radius: 50%;
+  color : rgb(64, 64, 64);
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: rgb(252, 202, 75); /* Optional: background color */
+
+  font-size: xx-large;
+
+
+
+  
+}
+
 .pips {
   position : absolute;
   margin : 0;
@@ -291,19 +398,22 @@ h1 {
 
   /* font-weight:1200; */
   font-size:xx-large;
+  color : white;
+  /* -webkit-text-stroke: 1px black; */
 
 }
 
 .red-number {
   outline : 2px solid rgb(107, 91, 70);
-  width : 4.2vw;
-  height : 4.2vw;
+  width : 4vw;
+  height : 4vw;
   border-radius: 50%;
   color : red;
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   background-color: rgb(252, 202, 75); /* Optional: background color */
+
 }
 
 
@@ -328,6 +438,8 @@ h1 {
   min-width: fit-content;
 
   margin-left : 10%;
+
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .button:hover {
