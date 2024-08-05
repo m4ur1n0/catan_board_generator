@@ -1,3 +1,4 @@
+<img src="./catan_generator/src/assets/demo.png" alt="current image of the site (unfinished)"/>
 # catan_board_generator
 Generate an well-balanced board for the game Settlers of Catan
 
@@ -10,5 +11,6 @@ NEW: I have now removed the Python components as they were unwieldy and unnecess
 
 # How To Use (now with less steps!)
 1. fork the repo
-2. run '''npm run dev'''
-3. done
+2. run ```cd catan_generator```
+3. run ```npm run dev```
+4. done
