@@ -438,6 +438,7 @@ h1 {
   min-width: fit-content;
 
   margin-left : 10%;
+  left : 10%;
 
   transition: background-color 0.25s, color 0.25s;
 }
