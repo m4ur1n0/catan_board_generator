@@ -6,37 +6,9 @@ I might someday launch a full build for this but for right now it was just a fun
 # Technology
 I built the algorithm for number dispersion and tile placement in Python and then built the interface using React.js and Typescript. Someday I'll rewrite the Python code in JS so that it can all be run off node (vs. the two-server system I'm currently employing), but again, this was just a fun project I made in an afternoon and this works for my purposes right now.
 
-# How To Use
-1. Clone the repository:
+NEW: I have now removed the Python components as they were unwieldy and unnecessary and always meant to be temporary. The files are still included in the repo if you're curious about what I had been doing. Now, tiles are laid out one-by-one using an algorithm that checks neighbors and neighboring weights to determine the next tile to place. The placing algorithm is now written in Typescript, after being developed in plain Javascript. This results in occasional infinite-loops when two values that aren't allowed to be next to each other are the last 2 that need to be placed. I will be fixing this soon.
 
-    ```bash
-    git clone https://github.com/m4ur1n0/catan_board_generator.git
-    cd catan_board_generator
-    ```
-
-2. Create and activate a virtual environment:
-
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-3. Install the dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run your application as needed:
-
-    ```bash
-    ./start_server.sh
-    ```
-    
-5. Kill the servers when you're through:
-
-   **NOTE:** this will kill any npm dev servers or processes running python scripts named 'server.py'
-
-    ```bash
-    ./kill_servers.sh
-    ```
+# How To Use (now with less steps!)
+1. fork the repo
+2. run '''npm run dev'''
+3. done
