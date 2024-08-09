@@ -1,0 +1,23 @@
+  // const runScript = async () => {
+  //   // Construct the URL based on the current location
+  //   const url = `http://${window.location.hostname}:5001/run-script`;
+
+  //   try {
+  //     const resp = await fetch(url);
+  //     if (!resp.ok) {
+  //       throw new Error('Network response was not ok');
+  //     }
+  //     const data = await resp.text();
+  //     setOutput(data); // Store the output in state
+  //   } catch (error) {
+  //     console.error(error);
+
+  //   }
+  // }
+  // const data = output;
+  // assuming all goes well (assuming)
+  // const validJsonStr = data.trim().replace(/'/g, '"');
+  // const board_values: (string | number)[][] = JSON.parse(validJsonStr);
+  // const board_values = [['stone', 9, 'A'], ['clay', 3, 'B'], ['desert', 0, 'C'], ['clay', 10, 'D'], ['sheep', 10, 'E'], ['wood', 9, 'F'], ['stone', 6, 'G'], ['sheep', 5, 'H'], ['hay', 4, 'I'], ['hay', 11, 'J'], ['wood', 12, 'K'], ['sheep', 6, 'L'], ['hay', 3, 'M'], ['stone', 11, 'N'], ['wood', 8, 'O'], ['wood', 5, 'P'], ['sheep', 4, 'Q'], ['hay', 8, 'R'], ['clay', 2, 'S']]
+  // setBoardVals(generate_board_values());
+  // let boardValues = 

@@ -17,9 +17,16 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "forceCon sistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true,
     "typeRoots": ["./node_modules/@types", "./src/types"],
-    "allowJs" : true
+    "allowJs" : true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*"]  // Ensure this includes all relevant files
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

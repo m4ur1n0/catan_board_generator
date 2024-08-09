@@ -5,7 +5,7 @@ export interface TileData {
     value : number;
 }
 
-import React from 'react'
+
 
 function getRandomInt(max_value : number) { // non-inclusive max
     return Math.floor(Math.random() * max_value);

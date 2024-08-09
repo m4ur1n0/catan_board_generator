@@ -7,9 +7,10 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+    "jsx" : "react"
   },
-  "include": ["vite.config.ts", "src/**/*"],
+  "include": ["vite.config.ts", "catan_generator/*"],
 
   "exclude": [
     "node_modules",
