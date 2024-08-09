@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlassPlus, faX, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlassPlus, faX } from '@fortawesome/free-solid-svg-icons';
 import React, {useState} from 'react'
 import { TileData } from '../generate_board_values';
 import DarkBoard from './DarkBoard';

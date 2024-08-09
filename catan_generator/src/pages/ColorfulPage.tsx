@@ -9,7 +9,7 @@ import Ownership from '../components/Ownership'
 const ColorfulPage = () => {
     const [boardValues, setBoardVals] = useState<TileData[]>(generate_board_values()); 
     const [lastBoardValues, setLastBoardValues] = useState<TileData[]>([]);
-    const [isLightMode, toggleDarkMode] = useDarkContext();
+    const [isLightMode] = useDarkContext();
 
     return (
         <>

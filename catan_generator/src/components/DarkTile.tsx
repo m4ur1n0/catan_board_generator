@@ -18,7 +18,7 @@ interface Props {
 }
 
 const DarkTile = (p : Props) => {
-    const [resource, value, index] = [p.resource, p.value, p.index];
+    const [resource, value] = [p.resource, p.value];
 
     function genRandom() {
         return Math.random() * (6 + 6 + Number.EPSILON) - 6;

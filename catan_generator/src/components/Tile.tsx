@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Tile = (p : Props) => {
-    const [isLightMode, toggleDarkMode] = useDarkContext();
+    const [isLightMode] = useDarkContext();
 
     const resource = p.resource;
     const value = p.value;

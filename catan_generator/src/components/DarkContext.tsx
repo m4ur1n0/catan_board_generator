@@ -1,9 +1,5 @@
 import React, {ReactNode, createContext, useState, useContext} from "react";
 
-interface DarkContextData {
-    onLightMode : boolean;
-}
-
 const DarkContext = createContext<boolean | any>(undefined);
 
 interface DarkProviderProps {
