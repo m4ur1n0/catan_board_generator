@@ -16,7 +16,7 @@ function App() {
         <DarkContextProvider>
           <Routes>
             <Route path='/light' Component={ColorfulPage} />
-            <Route path='/dark' Component={DarkPage} />
+            <Route path='/' Component={DarkPage} />
           </Routes>
         </DarkContextProvider>
       </Router>

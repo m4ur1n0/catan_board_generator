@@ -7,6 +7,8 @@ const DarkPage = () => {
     const [boardValues, setBoardVals] = useState<TileData[]>(generate_board_values());
     const [savedValues, setSavedValues] = useState<TileData[][]>([[], [], [], []]);
 
+    
+
 
     return (
         <DarkBackground boardValues={boardValues} setBoardValues={setBoardVals} saveData={savedValues} setSaveData={setSavedValues}>
