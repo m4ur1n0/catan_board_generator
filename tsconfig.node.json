@@ -10,7 +10,7 @@
     "noEmit": true,
     "jsx" : "react"
   },
-  "include": ["vite.config.ts", "catan_generator/*"],
+  "include": ["vite.config.ts", "catan_generator/*", "dist"],
 
   "exclude": [
     "node_modules",
