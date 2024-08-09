@@ -12,11 +12,11 @@ function App() {
   
   
   return (
-      <Router>
+      <Router basename='/catan_board_generator'>
         <DarkContextProvider>
           <Routes>
-            <Route path='/light' Component={ColorfulPage} />
-            <Route path='/' Component={DarkPage} />
+            <Route path='/light' element={<ColorfulPage />} />
+            <Route path='/' element={<DarkPage />} />
           </Routes>
         </DarkContextProvider>
       </Router>
