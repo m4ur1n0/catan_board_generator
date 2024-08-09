@@ -1,4 +1,4 @@
-<img src="./catan_generator/src/assets/demo.png" alt="current image of the site (unfinished)"/>
+<img src="./src/assets/demo.png" alt="current image of the site (unfinished)"/>
 
 # catan_board_generator
 Generate an well-balanced board for the game Settlers of Catan
