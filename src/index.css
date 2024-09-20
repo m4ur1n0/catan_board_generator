@@ -592,10 +592,10 @@ h1 {
   top: -0.5%;
   left : 0;
 
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
-  object-fit: cover;
+  object-fit: fill;
   /* min-width: 100%;
   min-height: 100%; */
 
@@ -615,10 +615,10 @@ h1 {
   /* background-color: red; */
 
   width : 22vw;
-  height : 8vw;
+  height : 16.5vh;
 
-  left : 143vh;
-  top : 39vw;
+  left : 69vw;
+  top : 81vh;
 
   z-index: 9999;
 
